@@ -10,8 +10,13 @@
 			height: 100%;
 			margin: 0px;
 			padding: 0px;
-			font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+			font-family: Helvetica, Helvetica Neue, Lucida Grande, Arial, sans-serif;
 			color: black;
+		}
+		h1 {
+			font-size: 2em;
+			letter-spacing: -1px;
+			font-weight: bolder;
 		}
 		a:link, a:visited, a:active {
 			text-decoration: none;
@@ -57,7 +62,7 @@
 		  var infoWindow = new google.maps.InfoWindow;
 	 
 		  // Change this depending on the name of your PHP file
-		  downloadUrl("phpsqlajax_genxml.php", function(data) {
+		  downloadUrl("markers.xml", function(data) {
 		    var xml = data.responseXML;
 		    var markers = xml.documentElement.getElementsByTagName("marker");
 		    for (var i = 0; i < markers.length; i++) {
@@ -172,15 +177,15 @@
 		<div id="overlay">
 			<h1>Scores on the Doors for Kingston upon Hull. Bon appetit.</h1>
 			<form>
-				Excellent<input type="checkbox" class="classification" onclick="boxclick(this,'A')" checked="checked" />
+				<label>Excellent<input type="checkbox" class="classification" onclick="boxclick(this,'A')" checked="checked" /></label>
 				&nbsp;
-				Good<input type="checkbox" class="classification" onclick="boxclick(this,'B')" checked="checked" />
+				<label>Good<input type="checkbox" class="classification" onclick="boxclick(this,'B')" checked="checked" /></label>
 				&nbsp;
-				Acceptable<input type="checkbox" class="classification" onclick="boxclick(this,'C')" checked="checked" />
+				<label>Acceptable<input type="checkbox" class="classification" onclick="boxclick(this,'C')" checked="checked" /></label>
 				&nbsp;
-				Poor<input type="checkbox" class="classification" onclick="boxclick(this,'D')" checked="checked" />
+				<label>Poor<input type="checkbox" class="classification" onclick="boxclick(this,'D')" checked="checked" /></label>
 				&nbsp;
-				Very Poor<input type="checkbox" class="classification" onclick="boxclick(this,'E')" checked="checked" />
+				<label>Very Poor<input type="checkbox" class="classification" onclick="boxclick(this,'E')" checked="checked" /></label>
 			</form>
 			<p>
 				<a href="http://www.hullcc.gov.uk/portal/page?_dad=portal&_pageid=221,52665&_schema=PORTAL">Data made available by Hull City Council.</a>
