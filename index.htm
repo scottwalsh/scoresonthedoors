@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>Scores on the Doors for Kingston upon Hull</title>
+
+		<link href="overlay.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="addmarkers.js"></script>
+		<script type="text/javascript" src="filtermarkers.js"></script>
+	</head> 
+	<body onload="load()">
+		<div id="map" style="width:100%; height:100%"></div> 
+		<div id="overlay"> 
+			<h1>Scores on the Doors for Kingston upon Hull. Bon appetit.</h1> 
+			<form> 
+				<label>Excellent<input type="checkbox" class="classification" onclick="boxclick(this,'A')" checked="checked" /></label> 
+				&nbsp;
+				<label>Good<input type="checkbox" class="classification" onclick="boxclick(this,'B')" checked="checked" /></label> 
+				&nbsp;
+				<label>Acceptable<input type="checkbox" class="classification" onclick="boxclick(this,'C')" checked="checked" /></label> 
+				&nbsp;
+				<label>Poor<input type="checkbox" class="classification" onclick="boxclick(this,'D')" checked="checked" /></label> 
+				&nbsp;
+				<label>Very Poor<input type="checkbox" class="classification" onclick="boxclick(this,'E')" checked="checked" /></label> 
+			</form> 
+			<p> 
+				<a href="http://www.hullcc.gov.uk/portal/page?_dad=portal&_pageid=221,52665&_schema=PORTAL">Data made available by Hull City Council.</a> 
+			</p> 
+		</div> 
+	</body> 
+</html> 

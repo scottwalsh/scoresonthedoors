@@ -1,0 +1,43 @@
+html {
+	height: 100%
+}
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	color: black;
+}
+h1 {
+	font-size: 2em;
+	letter-spacing: -1px;
+	font-weight: bolder;
+	text-shadow: #000000 0px 0px 1px;
+}
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: yellowgreen
+}
+a:hover {
+	text-decoration: underline;
+	color: lightgray;
+}
+#map {
+	height: 100%;
+	float: left;
+}
+#overlay {
+  	position: absolute;
+  	right: 20px;
+  	top: 40px;
+  	color: white; 
+  	border: 0px;
+	padding: 20px 40px;
+	text-align: center;
+	width: 15%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: #000000;
+	background-color: rgba(0,0,0,0.75);
+}
